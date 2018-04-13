@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>MyCoin Contract</title>
+    </head>
+
+    <body>
+        <div id="div_Web3Info"></div>
+        <h1>The MyCoin Contract <div id="div_MyCoinContractAddress"></div></h1>
+        
+
+
+        <br><br>
+        <div id="div_MyCoinInfo">
+            this div displays the following info about the MyCoin
+            coinName, coinCurrentPrice, contractOwnerAddress
+        </div>
+
+        <br><Br> 
+        <div>
+            <button onclick="App.getCurrentAccount_EtherBalance()" >Get CurrentAccount Ether Balance</button>
+            <div id="div_CurrentAccount_EtherBalance"> This Div displays account balance</div><br>
+            <button onclick="App.getCurrentAccount_MyCoinBalance()" >Get CurrentAccount MyCoin Balance</button>
+            <div id="div_CurrentAccount_MyCoinBalance"> This Div displays account MyCoin balance</div>
+        </div>
+
+        <br><Br>
+        <div>
+            Check Allowance Address : <input type="text" placeholder="address" id="input_AllowanceSpenderAddress">
+            <button onclick="App.getCurrentAccount_Allowance()" >Get Allowances of Current Account</button>
+            <div id="div_CurrentAccountSpenderAllowanceBalance"> This Div displays the allowance of entered account allowed by current account</div>
+        </div>
+
+
+        <br><Br>
+        <div>
+            <h3>Transfer MyCoins</h3>
+            Transfer MyCoin To : <input type="text" placeholder="address" id="input_TransferMyCoinAccountAddress"> <br>
+            Amount in MyCoins : <input type="number" placeholder="amount" id="input_TransferMyCoinValue"><br>
+            <button onclick="App.transferMyCoins()">Transfer MyCoins</button>
+            <div id="div_TransferMyCoinResultInfo"> This Div displays the transactionHash of the transaction </div>
+        </div>
+
+
+        <br><Br>
+            <div>
+                <h3>Buy MyCoins</h3>
+                Amount to Buy (in Ether) : <input type="number" placeholder="amount" id="input_BuyMyCoinValue">
+                <button onclick="App.buyMyCoins()"> Buy MyCoin</button>
+                <div id="div_BuyMyCoinInfo"> This Div displays the result of Buy MyCoin Transaction</div>
+            </div>
+
+        
+
+        <div>
+
+        </div>
+    
+    </body>
+    <script src="jquery.js" ></script>
+    <script src="bundle.js" ></script>
+    
+
+</html>

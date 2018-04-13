@@ -1,0 +1,18 @@
+{
+  "name": "gamblingsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "",
+    "hbs": "",
+    "path": "^0.12.7",
+    "solc": "0.4.8",
+    "web3": "0.17.0-alpha"
+  },
+  "author": "",
+  "license": "ISC"
+}
